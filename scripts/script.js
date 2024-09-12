@@ -120,7 +120,8 @@ function comportamentoMenu() {
   // Verifica se a classe "expandido" está presente
   if (document.body.classList.contains("expandido")) {
     // Remove a classe "expandido" se estiver presente
-    document.body.classList.remove("expandido");
+    //document.body.classList.remove("expandido");
+    document.body.classList.toggle("expandido");
   }
   document.body.classList.toggle("retraido");
   // Mudança de ícone em "Comportamento menu"
@@ -129,3 +130,69 @@ function comportamentoMenu() {
   );
   alternarClasses(icons, "fa-th-list", "fa-list");
 }
+
+function expandirMenu() {
+  // Verifica se a classe "expandido" está presente
+  if (document.body.classList.contains("retraido")) {
+    // Remove a classe "expandido" se estiver presente
+    //document.body.classList.remove("retraido");
+    document.body.classList.toggle("retraido");
+  }
+  document.body.classList.toggle("expandido");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var elements = document.querySelectorAll("center"); // Selecione todas as tags <p>, você pode ajustar seletor conforme necessário
+
+  elements.forEach(function (element) {
+    var texto = element.textContent; // Obtém o texto dentro da tag <p>
+    var novoTexto = ""; // Variável para armazenar o novo texto com caracteres coloridos
+
+    // Percorre cada caractere do texto
+    for (var i = 0; i < texto.length; i++) {
+      switch (texto[i]) {
+        case "=":
+          novoTexto += '<span class="verde">=</span>';
+          break;
+        case "-":
+          novoTexto += '<span class="vermelho">-</span>';
+          break;
+        case "+":
+          novoTexto += '<span class="azul">+</span>';
+          break;
+        default:
+          novoTexto += texto[i];
+      }
+    }
+
+    // Substitui o texto original pelo novo texto com caracteres coloridos
+    element.innerHTML = novoTexto;
+  });
+});
+
+// Código javaScript para o botão e pop-up
+var chatbotBtn = document.getElementById("chatbot-btn");
+var popUpCard = document.getElementById("pop-up-card");
+var popUpCardClose = document.getElementById("pop-up-card-close");
+
+chatbotBtn.addEventListener("click", function () {
+  popUpCard.style.display = "block";
+});
+
+popUpCardClose.addEventListener("click", function () {
+  popUpCard.style.display = "none";
+});
+
+// Fecha ao clivar fora do pop-up
+window.addEventListener("click", function (event) {
+  if (event.target == popUpCard) {
+    popUpCard.style.display = "none";
+  }
+});
+
+// Fecha ao precionar Esc
+window.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    popUpCard.style.display = "none";
+  }
+});

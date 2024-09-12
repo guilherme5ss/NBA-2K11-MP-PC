@@ -2,54 +2,67 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Lorem ipsum</title>
+  <title>NBA 2K11 My Player Mode Post-Game Press Conference FAQ</title>
   <link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <body>
-
-  </div>
   <nav class="main-menu">
-
     <div>
       <a class="logo">
       </a>
     </div>
     <div class="settings"></div>
     <div class="scrollbar" id="style-1">
-
       <ul>
-
-        <li>
+        <li onClick="expandirMenu()">
           <a>
             <i class="fa fa-bars fa-lg"></i>
             <span class="nav-text">Menu</span>
           </a>
         </li>
         <li>
-
           </span>
           <span class="nav-text">
           </span>
-
           </a>
-
         </li>
-
-        </li>
-        <li class="darkerlishadow">
+        <li class="darkerli">
           <a href="#capitulo_1">
             <span class="nav-icon">1</span>
-            <span class="nav-text">Lorem ipsum</span>
+            <span class="nav-text">Purpose</span>
           </a>
         </li>
-
         <li class="darkerli">
           <a href="#capitulo_2">
             <span class="nav-icon">2</span>
-            <span class="nav-text">Lorem ipsum</span>
+            <span class="nav-text">How to Read</span>
+          </a>
+        </li>
+        <li class="darkerli">
+          <a href="#capitulo_3">
+            <span class="nav-icon">3</span>
+            <span class="nav-text">The Questions</span>
+          </a>
+        </li>
+        <li class="darkerli">
+          <a href="#capitulo_4">
+            <span class="nav-icon">4</span>
+            <span class="nav-text">How to Contribute/Correct</span>
+          </a>
+        </li>
+        <li class="darkerli">
+          <a href="#capitulo_5">
+            <span class="nav-icon">5</span>
+            <span class="nav-text">Acknowledgements</span>
+          </a>
+        </li>
+        <li class="darkerli">
+          <a href="#capitulo_6">
+            <span class="nav-icon">6</span>
+            <span class="nav-text">Version History</span>
           </a>
         </li>
       </ul>
@@ -59,68 +72,646 @@
           <span class="nav-text">Configuração</span>
         </a>
         <ul id="configuracao-submenu" style="display: none;">
-          <li class="darkerli" onClick="mudaLado(this)">
-            <i class="fa fa-arrow-left fa-lg"></i>
-            <span class="nav-text">Lado</span>
-          </li>
           <li class="darkerli" onClick="mudaModo()">
-            <i class="fa fa-sun-o fa-lg"></i>
-            <span class="nav-text">Aparência</span>
+            <a>
+              <i class="fa fa-sun-o fa-lg"></i>
+              <span class="nav-text">Tema</span>
+            </a>
+          </li>
+          <li class="darkerli" onClick="mudaLado(this)">
+            <a>
+              <i class="fa fa-arrow-left fa-lg"></i>
+              <span class="nav-text">Lado</span>
+            </a>
           </li>
           <li class="darkerli" onClick="aumentaMargem()">
-            <i class="fa fa-outdent fa-lg"></i>
-            <!--<i class="fa fa-indent fa-lg"></i>-->
-            <span class="nav-text">Margem</span>
+            <a>
+              <i class="fa fa-outdent fa-lg"></i>
+              <!--<i class="fa fa-indent fa-lg"></i>-->
+              <span class="nav-text">Margem</span>
+            </a>
           </li>
           <li class="darkerli" onClick="comportamentoMenu()">
-            <i class="fa fa-align-right fa-lg"></i>
-            <span class="nav-text">Comportamento menu</span>
+            <a>
+              <i class="fa fa-th-list fa-lg"></i>
+              <span class="nav-text">Retrair Menu</span>
+            </a>
+          </li>
+          <li class="darkerli">
+            <a>
+              <i class="fa fa-refresh fa-lg"></i>
+              <span class="nav-text">Reiniciar configurações</span>
+            </a>
           </li>
         </ul>
       </li>
-
       </ul>
-      <li>
+      <li id="chatbot-btn">
         <a>
           <i class="fa fa-question-circle fa-lg"></i>
-          <span class="nav-text">Help</span>
+          <span class="nav-text">Ajuda</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="#texto">
           <i class="fa fa-home fa-lg"></i>
-          <span class="nav-text">Home</span>
+          <span class="nav-text">Ínicio</span>
         </a>
       </li>
   </nav>
+  <!-- Pop-up código HTML -->
+  <div id="pop-up-card">
+    <div id="pop-up-card-content">
+      <span id="pop-up-card-close">&times;</span>
+      <p>Texto baseado em: <a href="https://gamefaqs.gamespot.com/xbox360/987827-nba-2k11/faqs/61857" class="sublinhar">Post Game Interview Guide (PC) by imacdcptn</a>; em <a href="https://gamefaqs.gamespot.com/" class="sublinhar">GameFAQs</a>.</p>
+      <p>Menu lateral baseado em: <a href="https://codepen.io/EduardL/pen/jObzJB" class="sublinhar"> Home Side Sliding Menu CSS por Eduard L.<a></p>
+      <p>Pop-up ajuda baseado em: <a href="https://codepen.io/Nayeem99/pen/mdzJdNZ" class="sublinhar"> Chat bot for Kartexa; por Mohammed Nayeem<a>.</p>
+    </div>
+  </div>
   <div class="conteudo" id="texto">
     <h1>
-      Lorem ipsum
+      <div class="nba2k">NBA 2K11</div> My Player Mode Post-Game Press Conference FAQ
     </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Version 0.4. For NBA 2K11, English-language, PC (applies to other platforms). By Mister Mouth
+    </p>
     <a id="capitulo_1">
-      <h2>1. Lorem ipsum</h2>
+      <h2>1. Purpose</h2>
     </a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Following almost all regular- and post-season NBA games in NBA 2K11's My Player mode, your player is asked a question by a member of the in-game press, to which he can respond with one of four qualities: Professionalism, Arrogance, Loyalty, or Indifference. Your choice of response can affect three ratings attached your player: Teammate Chemistry, League-Wide Popularity, and Local Fan Support. These ratings in turn can change the play of the game for your player. For example, a player with low Teammate Chemistry will find the ball passed to him less often.</p>
+    <p>The purpose of this FAQ is to provide a list of the questions that can be posed to your player and the personal ratings changes that result from each answer. This will allow you to optimize your created ballers' personal ratings.</p>
     <a id="capitulo_2">
-      <h2>2. Lorem ipsum</h2>
+      <h2>2. How to Read</h2>
     </a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>In the "Questions" section is a list of questions, sorted alphabetically - note that leading articles are not dropped for the purpose of sorting. On the nextline after each question is a tab-delineated list with entries "<span style="font-family: 'Courier Prime', monospace; font-size: 20px;">P:</span>", "<span style="font-family: 'Courier Prime', monospace; font-size: 20px;">A:</span>", "<span style="font-family: 'Courier Prime', monospace; font-size: 20px;">L:</span>", and "<span style="font-family: 'Courier Prime', monospace; font-size: 20px;">I:</span>" respectively for the answer with the qualities Professionalism, Arrogance, Loyalty, and Indifference. Following the colon for each answer quality is a list of three symbols from the set "<span class="azul" style="font-family: 'Courier Prime', monospace; font-size: 20px;">+</span>", "<span class="verde" style="font-family: 'Courier Prime', monospace; font-size: 20px;">=</span>", "<span class="vermelho" style="font-family: 'Courier Prime', monospace; font-size: 20px;">-</span>", and "<span style="font-family: 'Courier Prime', monospace; font-size: 20px;">?</span>". The first slot records how answering with the given question with the given quality changes the Teammate Chemistry, the second the League-Wide Popularity, and the third the Local Fan Support. A "<span class="azul" style="font-family: 'Courier Prime', monospace; font-size: 20px;">+</span>" indicates an increase; an "<span class="verde" style="font-family: 'Courier Prime', monospace; font-size: 20px;">=</span>", no change; "<span class="vermelho" style="font-family: 'Courier Prime', monospace; font-size: 20px;">-</span>", a decrease; and a "<span style="font-family: 'Courier Prime', monospace; font-size: 20px;">?</span>", that the result is unknown.</p>
+
+    <p>For example, consider the following (fictitious) entry:</p>
+    <p>My sources in the league office indicate that a management change may be in the works. How do you feel about your coaches?</p>
+    <p>
+      <center> P:=-+ A:-+- L:??? I:??? </center>
+    </p>
+    <p>This indicates that, if an in-game reporter asks your player the given question ("My sources in the league office indicate...",) and you answer with Professionalism, the result will be that Teammate Chemistry will remain unchanged, League-Wide Popularity will decrease, and Local Fan Support will increase. If, on the other hand, you answer with Arrogance, Teammate Chemistry will decrease, League-Wide Popularity will increase, and Local Fan Support will decrease. The results from answering with Loyalty or Indifference are unknown, so you can help build this FAQ by choosing one of those answers and e-mailing me the results. To do that, see the section on "How To Contribute/Correct" below!</p>
+
+    <p>A caveat may prove useful. The texts of questions in this FAQ are (as close as possible) the _written texts_ of questions from the PC version of the game. For some questions, the audio differs from the written text. So make sure to compare the written text of the question you're dealing with to the text in this FAQ, and be aware that some variance may exist if you're playing on a platform other than PC.</p>
+    <a id="capitulo_3">
+      <h2>3. The Questions</h2>
+    </a>
+    <p>A lot of calls went against you in tonight's game. After a while did it start to feel like it was one of those nights when things just weren't going to go your way?</p>
+    <p>
+      <center>P:==+ A:??? L:??? I:???</center>
+    </p>
+    <p></p>
+    <p>A lot of people were saying after the game that you took way too many from behind the line considering how much trouble you were having getting them to fall. How do you respond to that?</p>
+    <p>
+      <center>P:=-+ A:=+- L:=-= I:=++</center>
+    </p>
+    <p>A lot of people would say that all the glory comes on offense, but isn't it fair to say that you pride yourself just as much on your defense?</p>
+    <p>
+      <center>P:+-= A:=++ L:+-= I:+-+</center>
+    </p>
+
+    <p>A source in the NBA offices has apparently leaked the list of players who have been named to the all-star team, and it just so happens that you are on that list. Congratulations! First thoughts?</p>
+    <p>
+      <center>P:=++ A:=-+ L:+++ I:+++</center>
+    </p>
+
+    <p>According to my sources within the league office, you have just been named the conference Player of the Week once again. Who do you most credit for this award?</p>
+    <p>
+      <center>P:+++ A:-+= L:+++ I:+=+</center>
+    </p>
+
+    <p>After back-to-back games, how are you feeling? Any worries about the team getting worn down?</p>
+    <p>
+      <center>P:+== A:-+= L:==+ I:+-=</center>
+    </p>
+
+    <p>After tonight's game, you're now officially an NBA player. Were there any nerves for you stepping out on to the court for the first time?</p>
+    <p>
+      <center>P:+=+ A:??? L:??? I:???</center>
+    </p>
+
+    <p>After your game tonight, I feel like it's safe to say that you've made your statement that you not only belong in this league, but that you will one day be a force in this league. Do you agree with that?</p>
+    <p>
+      <center>P:+++ A:=++ L:+-+ I:???</center>
+    </p>
+
+    <p>Are your teammates passing you the ball as much as you would like? Some might say there's been a bit of frustration on your part if you don't touch the ball on a given play.</p>
+    <p>
+      <center>P:+== A:-+- L:+=+ I:=-+</center>
+    </p>
+
+    <p>As I'm sure you've already noticed, Coach isn't sitting next you here tonight. We just got word from brass that he has been fired by the team brass for the team's recent poor performance. Having just found this out, how do you react to something like that?</p>
+    <p>
+      <center>P:-=+ A:+++ L:??? I:???</center>
+    </p>
+
+    <p>As this game was ending, the selection committee released the rosters for the upcoming Rookie-Sophomore game at All-Star Weekend. Your excellent play has been recognized, having earned a spot on the roster. Your thoughts?</p>
+    <p>
+      <center>P:=++ A:=+= L:=++ I:=+=</center>
+    </p>
+
+    <p>As this was your first time playing against your old team that have traded you, do you have any feelings of revenge, remorse, anything?</p>
+    <p>
+      <center>P:=-- A:=++ L:+=+ I:=-=</center>
+    </p>
+    <p>At this point in your career, how frustrating is it to have picked up an injury that appears as if it is going to keep you sidelined for quite some time?</p>
+    <p>
+      <center>P:+=+ A:-+- L:+=+ I:=++</center>
+    </p>
+    <p>Can you assess how your team's doing so far in the season? Do you think you can make it in the playoffs?</p>
+    <p>
+      <center>P:+=+ A:??? L:??? I:???</center>
+    </p>
+    <p>Coach has just indicated that you're now the starter at your position. How does it feel to have cracked that starting rotation?</p>
+    <p>
+      <center>P:+=+ A:-++ L:==+ I:+++</center>
+    </p>
+    <p>Congratulations on bringing home the Larry O'Brien trophy. How much do you feel that you individually contributed towards winning the title?</p>
+    <p>
+      <center>P:+++ A:=++ L:+++ I:+++</center>
+    </p>
+    <p>Congratulations on the win tonight, this gives the team 3 wins in a row. Could this be the start of something bigger?</p>
+    <p>
+      <center>P:+=+ A:-+- L:+=+ I:=+=</center>
+    </p>
+    <p>Do you and your coach get along? How do two personalities as different as yours maintain a working relationship?</p>
+    <p>
+      <center>P:==+ A:=+- L:==+ I:=-+</center>
+    </p>
+    <p>Do you feel like you're a leader on this team, both on the court and in the locker room? How do you feel about the way things are handled by the team behind closed doors?</p>
+    <p>
+      <center>P:+=+ A:++= L:=-+ I:=-=</center>
+    </p>
+    <p>Do you feel like you're getting the ball out there enough? And do you like to let the offense come to you, or do you feel more comfortable when you're the one calling the shots?</p>
+    <p>
+      <center>P:+== A:=+= L:+-+ I:=-+</center>
+    </p>
+    <p>Excellent performance in tonight's game. In case you haven't heard, you set your career high in points. How did it feel to be on such a roll on offense?</p>
+    <p>
+      <center>P:==+ A:=+= L:+=+ I:=-=</center>
+    </p>
+    <p>From the looks of things, you appear to have taken over the starting role for your position. What do you think?</p>
+    <p>
+      <center>P:+=+ A:-+= L:+=+ I:+=+</center>
+    </p>
+    <p>Great game out there tonight. You set your career high in points. Was this just a one-time outburst, or do you see yourself scoring like this on a regular basis?</p>
+    <p>
+      <center>P:==+ A:=++ L:+=+ I:???</center>
+    </p>
+    <p>Great win for the team tonight. You guys were clearly clicking on all cylinders. What can you take out of a positive win like tonights?</p>
+    <p>
+      <center>P:+++ A:+++ L:+=+ I:=-=</center>
+    </p>
+    <p>Great work out there tonight. You had another double-double, and you've really got a streak going now. How is it that you've been able to keep posting numbers like that each game?</p>
+    <p>
+      <center>P:==+ A:=++ L:+-+ I:=-+</center>
+    </p>
+    <p>Has your coach ever talked to you about changing positions, maybe moving up or down one spot to see how it worked? What do you think about that idea? Is your position right now best suited to your game?</p>
+    <p>
+      <center>P:==+ A:??? L:==+ I:???</center>
+    </p>
+    <p>Having just been named Rookie of the Month, can you tell us how that feels?</p>
+    <p>
+      <center>P:=+= A:++= L:+++ I:???</center>
+    </p>
+    <p>Having just played your first game with this team, how does it feel playing with this group of guys?</p>
+    <p>
+      <center>P:+=+ A:??? L:??? I:+=+</center>
+    </p>
+    <p>How are things in the locker room at this point in the season? It's been rumored that some of the guys may not be getting along all that well. What's your take on this?</p>
+    <p>
+      <center>P:+++ A:-+= L:+=+ I:-+-</center>
+    </p>
+    <p>How big of a factor is defense in the way you play out there? Does it even factor into what you're doing, or is more of the focus on making things happen offensively?</p>
+    <p>
+      <center>P:+=+ A:=++ L:+-+ I:???</center>
+    </p>
+    <p>How big of an impact do the fans have on any given game? And how do you feel about your team's fans?</p>
+    <p>
+      <center>P:==+ A:=++ L:==+ I:=--</center>
+    </p>
+    <p>How do you feel about where your coach has been playing you? Ever think about moving to a different position out there?</p>
+    <p>
+      <center>P:==+ A:=++ L:==+ I:+=+</center>
+    </p>
+    <p>How do you feel about your relationship with the coaching staff? Have they set up the offense to best utilize your skill set, or do you think there's room to improve there?</p>
+    <p>
+      <center>P:+=+ A:=++ L:=-+ I:==+</center>
+    </p>
+    <p>How do you feel management has done in putting this team together? Is this a group that can stay together for the long haul and eventually go all the way?</p>
+    <p>
+      <center>P:+=+ A:-+= L:+== I:+-=</center>
+    </p>
+    <p>How do you see yourself in more of a historical context? Do you feel like one day you'll have the chance to be considered one of the all-time greats?</p>
+    <p>
+      <center>P:=-+ A:-++ L:+-= I:???</center>
+    </p>
+    <p>How much does the history of the game mean to you? When you think about the players who came before you, do you feel you owe them anything?</p>
+    <p>
+      <center>P:=++ A:??? L:+=+ I:???</center>
+    </p>
+    <p>How would you evaluate the front office's job in building this roster? Are there certain things you hoped they would handle differently or wish they would do now?</p>
+    <p>
+      <center>P:=-= A:??? L:==+ I:=-+</center>
+    </p>
+    <p>I couldn't help but notice the ball wasn't in your hands for the last shot of the game. Do you have any comments on that?</p>
+    <p>
+      <center>P:+-= A:??? L:+-+ I:+-+</center>
+    </p>
+    <p>I think we can all agree that you had WAY too many turnovers out there tonight. What kept you from holding onto the ball better in this game?</p>
+    <p>
+      <center>P:=-= A:-+= L:+-+ I:-=-</center>
+    </p>
+    <p>Is fatigue setting in at all after a back-to-back like this?</p>
+    <p>
+      <center>P:+=+ A:-++ L:=-+ I:=+-</center>
+    </p>
+    <p>It has just been publicly announced that you have been named the conference Player of the Week for this past week. This is the first time you have received this award. Can we expect more of this from you in the future?</p>
+    <p>
+      <center>P:+++ A:??? L:=++ I:=++</center>
+    </p>
+    <p>It seemed like you guys could do no wrong out there tonight. What's it feel like to come off of such a great all-around team performance?</p>
+    <p>
+      <center>P:+== A:++= L:+=+ I:-+-</center>
+    </p>
+    <p>It seems like defense is an afterthought to a lot of players these days. How important is defense to your game?</p>
+    <p>
+      <center>P:+=+ A:=+= L:+-+ I:==+</center>
+    </p>
+    <p>It seems like now would be a good time to ask you a little bit about your practice habits. How important is it to you to put in as much extra time as you can, and does it wear you down over the course of a long season?</p>
+    <p>
+      <center>P:==+ A:=+- L:+=+ I:+=+</center>
+    </p>
+    <p>It was a rough night from behind the arc tonight, yet you kept on shooting. Why were you struggling so much from deep?</p>
+    <p>
+      <center>P:+=+ A:??? L:??? I:???</center>
+    </p>
+    <p>It was an unbelieveable performance for you out there on the boards. You were grabbing everything in sight, and ended up setting the team record. What did you do on the floor tonight to make this happen?</p>
+    <p>
+      <center>P:=++ A:=+- L:+=+ I:???</center>
+    </p>
+    <p>It was not a good night for you in terms of shooting the ball. How do you rebound from a poor shooting performance like that?</p>
+    <p>
+      <center>P:=-- A:-+= L:+=+ I:???</center>
+    </p>
+    <p>It was straight domination by your opponent in the trenches tonight. He outrebounded you by quite a bit. Was there something keeping you from getting involved more down low?</p>
+    <p>
+      <center>P:=-= A:-+- L:??? I:=--</center>
+    </p>
+    <p>It's got to be a great feeling setting the team record for points tonight. How does it feel to get such an accomplishment?</p>
+    <p>
+      <center>P:+++ A:=++ L:+++ I:+-+</center>
+    </p>
+    <p>Is it tough getting out there on the practice court after pushing yourself to the limit each game? Do you feel like you're going through the motions, or is there always something to work on?</p>
+    <p>
+      <center>P:==+ A:=++ L:==+ I:+==</center>
+    </p>
+    <p>Kobe lit you guys up out there tonight. Did the team try to do anything specific to shut him down? How do you react to a player that's on a roll like that?</p>
+    <p>
+      <center>P:=-- A:-+- L:=-- I:---</center>
+    </p>
+    <p>LeBron had a great game and really took it to your team tonight. Did you have a gameplan going in to try to stop him? How did it feel to see him scoring early and often like that?</p>
+    <p>
+      <center>P:+-- A:-+- L:=+- I:---</center>
+    </p>
+    <p>Let me be the first person to congratulate you on your spectacular performance tonight. I don't know if you saw the final stat line, but you ended up with a triple-double, the first of your career. Can we expect more performances like this from you in the future?</p>
+    <p>
+      <center>P:+++ A:+++ L:+++ I:+-+</center>
+    </p>
+    <p>Let's talk about the team as a whole for a minute. What do you think about management and the way this team has been constructed? Does this group of guys really have what it takes to contend for a title?</p>
+    <p>
+      <center>P:+== A:??? L:+=+ I:???</center>
+    </p>
+    <p>Looks like you'll be moving on to the next round. Are you relieved to have this series out of the way so you can get ready for the next challenge?</p>
+    <p>
+      <center>P:=++ A:+++ L:++= I:+++</center>
+    </p>
+    <p>Lots of people would say the fans for your team can be classified as fair-weather fans. Do you feel like they are legitimately behind the team regardless of whether you're winning or losing?</p>
+    <p>
+      <center>P:==+ A:=+= L:+=+ I:==-</center>
+    </p>
+    <p>Not sure if you're aware, but tonight marked your 50th straight game scoring in double digits. That's more than half a season, and a pretty remarkable display of consistency. What's been the key to such a long run?</p>
+    <p>
+      <center>P:+++ A:+++ L:+=+ I:+-+</center>
+    </p>
+    <p>Now that game 1 of your NBA career is in the books, how would you rate your performance?</p>
+    <p>
+      <center>P:+=+ A:??? L:+=+ I:=-+</center>
+    </p>
+    <p>Now that you've played your first NBA game, how are you feeling?</p>
+    <p>
+      <center>P:+++ A:=++ L:+-+ I:???</center>
+    </p>
+    <p>Now that you've wrapped up this series, what's the next step for you and your team?</p>
+    <p>
+      <center>P:+++ A:-+- L:+++ I:=-+</center>
+    </p>
+    <p>Once again you have been named the conference Player of the Month. What changes in your reaction to winning this award?</p>
+    <p>
+      <center>P:+=+ A:=++ L:+-+ I:+=+</center>
+    </p>
+    <p>Once again, you have been named as the Rookie of the Month. Your star seems to be rising rapidly at this point in your career. What does your future hold?</p>
+    <p>
+      <center>P:=++ A:=+= L:+=+ I:+=+</center>
+    </p>
+    <p>One complaint about your game tonight is that you weren't taking care of the ball. Why so many turnovers?</p>
+    <p>
+      <center>P:=-+ A:-+- L:+-+ I:=+-</center>
+    </p>
+    <p>Rough game for you out there on the defensive side of the ball, causing a lot of people to question your effort. What do you have to say to that kind of criticism?</p>
+    <p>
+      <center>P:==+ A:-+- L:+-- I:=--</center>
+    </p>
+    <p>Sometimes it seems like you're having trouble establishing a rhythm on offense. Would you say you're getting enough touches out there?</p>
+    <p>
+      <center>P:+== A:-+- L:+== I:+-+</center>
+    </p>
+    <p>That might have been your best game as a pro. You had your best scoring output ever, so clearly something was clicking. Did this just happen to be a good game, or is this the type of lever we're going to see you playing at from here on out?</p>
+    <p>
+      <center>P:==+ A:=++ L:=-= I:???</center>
+    </p>
+    <p>The team just got steamrolled tonight. What are your thoughts after a performance like that?</p>
+    <p>
+      <center>P:+-= A:-++ L:=-= I:=--</center>
+    </p>
+    <p>The trade deadline is coming up soon. How do you feel about some of your teammates possibly getting shipped off to another team? What do you think management is trying to do at this point?</p>
+    <p>
+      <center>P:??? A:??? L:+=+ I:???</center>
+    </p>
+    <p>The trade deadline is rapidly approaching. You think there's any chance we see a blockbuster move made by this team?</p>
+    <p>
+      <center>P:-=+ A:-++ L:+-+ I:=-=</center>
+    </p>
+    <p>They really had your number out there tonight, and it wasn't even close. What happened?</p>
+    <p>
+      <center>P:-=- A:-+- L:=-= I:===</center>
+    </p>
+    <p>This being your first game back from injury, how did it feel out there tonight? Is it going to take some time to get back in the groove of things?</p>
+    <p>
+      <center>P:+=+ A:+=+ L:==+ I:=-+</center>
+    </p>
+    <p>This loss makes what, 3 games in a row? What's going on with the team at the moment?</p>
+    <p>
+      <center>P:+=- A:??? L:=-+ I:+++</center>
+    </p>
+    <p>This team is clearly on the up-and-up with this being, what, your 5th straight win? What has been the secret to the team's recent success?</p>
+    <p>
+      <center>P:+=+ A:-+- L:+=+ I:=-=</center>
+    </p>
+    <p>Thus far, the team's been doing well. Going into the second half of the season, what do you think of your chances in the postseason?</p>
+    <p>
+      <center>P:=++ A:-++ L:+=+ I:=-=</center>
+    </p>
+    <p>Tonight marked the first time you have played these guys since changing teams in the offseason. Any regrets on jumping ship or do you feel like you are in a better place now?</p>
+    <p>
+      <center>P:??? A:+++ L:??? I:???</center>
+    </p>
+    <p>Tonight's game marks your first career double-double. Do you view this game as the stepping off point in your career?</p>
+    <p>
+      <center>P:=++ A:??? L:+++ I:???</center>
+    </p>
+    <p>Tonight's win makes it 7 in a row for you guys. How long can this ride last?</p>
+    <p>
+      <center>P:+++ A:-+- L:+++ I:==+</center>
+    </p>
+    <p>Two related questions - One, do you have any comments on the current rotation? And two, has the coaching staff put together a gameplan that truly utilizes the talents of this team?</p>
+    <p>
+      <center>P:==+ A:-+= L:==+ I:=-+</center>
+    </p>
+    <p>We recently saw a big trade that shook up the rotation as well as the emotions in the locker room. How have you reacted to it?</p>
+    <p>
+      <center>P:+=+ A:-++ L:+-+ I:+++</center>
+    </p>
+    <p>We're getting really close to the trade deadline. What's the feeling around the team right now? Are guys worried or nervous that they could get shipped off?</p>
+    <p>
+      <center>P:==+ A:-++ L:==+ I:-+-</center>
+    </p>
+    <p>We're starting to hear reports that you have recently requested a trade to another team. Any truth to those rumors?</p>
+    <p>
+      <center>P:+++ A:-+- L:??? I:+++</center>
+    </p>
+    <p>Well, congratulations on breaking the NBA record for points scored in a game. That's a pretty incredible feat! You have now surpassed some of the legends in the history of this league. How does it feel to be in their company?</p>
+    <p>
+      <center>P:=++ A:+++ L:+++ I:=-+</center>
+    </p>
+    <p>What are your thoughts about your current position? Does it interest you at all to think about moving up or down if it suits the team?</p>
+    <p>
+      <center>P:+=+ A:-+= L:=-+ I:==+</center>
+    </p>
+    <p>What do you think about your game from a historical perspective? Is it fair to talk about you someday being one of the best ever?</p>
+    <p>
+      <center>P:=++ A:=+- L:??? I:???</center>
+    </p>
+    <p>What has the reaction been like following yesterday's trade? As the former starter at your position, do you feel any animosity coming from his friends inside the locked room?</p>
+    <p>
+      <center>P:??? A:??? L:+=+ I:???</center>
+    </p>
+    <p>What is team chemistry like at this point in the season? How do you feel the guys get along both on and off the court?</p>
+    <p>
+      <center>P:+=+ A:-+- L:+=+ I:-==</center>
+    </p>
+    <p>What is your relationship with the fans like? How much of a difference can they make in any given game?</p>
+    <p>
+      <center>P:==+ A:==+ L:==+ I:+--</center>
+    </p>
+    <p>What is your take on practice? Do you really feel like it makes your game better or helps you get a better feel for the way your teammates like to play?</p>
+    <p>
+      <center>P:=++ A:=+- L:+-+ I:==-</center>
+    </p>
+    <p>What was with all the crazy calling for the ball you were doing out there? Was the coach setting up extra plays for you, or was this more of you doing your own thing?</p>
+    <p>
+      <center>P:==+ A:-== L:+-- I:-=-</center>
+    </p>
+    <p>With the result of tonight's game, you guys have officially clinched a playoff spot. How do you handle the rest of the season? Do you take your foot off of the gas pedal for a little bit or do you keep going full speed ahead?</p>
+    <p>
+      <center>P:==+ A:+++ L:+-+ I:+=+</center>
+    </p>
+    <p>With this series done and out of the way, what kind of preparation do you begin with for your next opponent?</p>
+    <p>
+      <center>P:+++ A:+++ L:=++ I:???</center>
+    </p>
+    <p>Word has just come down from the league that you have been awarded the Player of the Month award. Does something like this create any sort of momentum that will help the team as a whole?</p>
+    <p>
+      <center>P:+++ A:-+= L:+++ I:???</center>
+    </p>
+    <p>You can't be happy with your defensive performance after a game like that. How do you recover from getting schooled early and often the way you did? Is it even possible?</p>
+    <p>
+      <center>P:==+ A:=+- L:+-= I:=--</center>
+    </p>
+    <p>You ended up spending more time than expected on the bench tonight due to foul trouble. What do you have to say about that?</p>
+    <p>
+      <center>P:==+ A:=+= L:+== I:=-=</center>
+    </p>
+    <p>You guys did a really nice job on Kobe tonight, holding him to one of his lowest scoring totals of the season. How were you able to shut him down so effectively?</p>
+    <p>
+      <center>P:+=+ A:-+- L:+=+ I:???</center>
+    </p>
+    <p>You guys really frustrated LeBron tonight, harassing him into one of his worst performances of the year so far. What did you do specifically to throw him off his game?</p>
+    <p>
+      <center>P:+++ A:=++ L:+++ I:+=+</center>
+    </p>
+    <p>You guys really ran them out of the building tonight. It's gotta feel good coming off of a win like that. What was the reaction like in the locker room afterwards?</p>
+    <p>
+      <center>P:+=+ A:+=+ L:+++ I:++=</center>
+    </p>
+    <p>You guys took quite a beating in tonight's game. What was the mood like in the locker room afterwards?</p>
+    <p>
+      <center>P:=-= A:??? L:+=+ I:???</center>
+    </p>
+    <p>You had some pretty horrible luck shooting the ball tonight. Any explanation as to why the shots weren't falling for you?</p>
+    <p>
+      <center>P:=-- A:??? L:??? I:=--</center>
+    </p>
+    <p>You posted yet another double-double in tonight's game. How have you been able to keep up that level of consistency?</p>
+    <p>
+      <center>P:+=+ A:=++ L:+-+ I:=-=</center>
+    </p>
+    <p>You really ended up looking foolish out there calling for the ball so many times in poor situations. What in the world were you thinking?</p>
+    <p>
+      <center>P:+=- A:-+- L:+-+ I:-+-</center>
+    </p>
+    <p>You really seemed to be hogging the ball out there tonight? Why weren't you looking to get your teammates more involved with things?</p>
+    <p>
+      <center>P:-=- A:??? L:-=- I:???</center>
+    </p>
+    <p>You seemed to have a difficult time holding on to the ball out there? Was the defense just too much for you to handle?</p>
+    <p>
+      <center>P:+=+ A:=+= L:+-- I:=-+</center>
+    </p>
+    <p>You struggled with your free throws tonight. It looked like perhaps maybe the pressure was getting to you. What happened at the line?</p>
+    <p>
+      <center>P:==+ A:??? L:??? I:???</center>
+    </p>
+    <p>You took a lot of shots from downtown even though they really weren't falling. Why did you keep on shooting even when it was clear you weren't hitting from the outside?</p>
+    <p>
+      <center>P:==+ A:=++ L:+=+ I:???</center>
+    </p>
+    <p>You were a rejection machine in tonight's game. How does it feel sending so many shots back the other way for the first time in your NBA career</p>
+    <p>
+      <center>P:=++ A:??? L:??? I:???</center>
+    </p>
+    <p>You were outrebounded by a pretty significant margin tonight. What happened that let your man have such an advantage over you on the glass?</p>
+    <p>
+      <center>P:--= A:??? L:??? I:???</center>
+    </p>
+    <p>You were picking pockets left and right in tonight's game, setting your career high in steals. Were you specifically focused on getting as many steals as you could?</p>
+    <p>
+      <center>P:=++ A:??? L:+-+ I:???</center>
+    </p>
+    <p>You were really showcasing your passing skills out there tonight, setting the team record for assists. Did you even realize what you were doing as the game unfolded?</p>
+    <p>
+      <center>P:+++ A:+++ L:+-+ I:+-+</center>
+    </p>
+    <p>You were riding the pine for quite a while tonight with all those fouls. What happened that caused you to get called so frequently?</p>
+    <p>
+      <center>P:=-+ A:=+- L:=-= I:==+</center>
+    </p>
+    <p>You were seen out there calling for the ball WAY too often tonight, and in situations where you probably shouldn't have been. How do you explain that, and why were you asking for the ball so much?</p>
+    <p>
+      <center>P:-=- A:-+- L:+== I:-+-</center>
+    </p>
+    <p>You've been on a scoring tear lately, dropping 20 points in ten straight games. How have you been able to keep up that level of consistency for such a long stretch?</p>
+    <p>
+      <center>P:=++ A:=++ L:+=+ I:=-+</center>
+    </p>
+    <p>You've played a couple of tough games now back-to-back. Are you looking forward to getting a day off and a little rest?</p>
+    <p>
+      <center>P:==+ A:-+= L:+== I=++</center>
+    </p>
+    <p>Your man really did a number on you tonight on the boards. How do you explain such a discrepancy?</p>
+    <p>
+      <center>P:=-+ A:-++ L:=-+ I:=--</center>
+    </p>
+    <p>Your man was running wild tonight, seemingly putting up points at will. Where did things go wrong for you defensively?</p>
+    <p>
+      <center>P:=-- A:-+- L:=-- I:+-=</center>
+    </p>
+    <p>Your name has started to surface in the Rumor Mill with numerous teams reported to be interested in your services. How do the rumors have an impact on your play on the court?</p>
+    <p>
+      <center>P:+=+ A:+++ L:+++ I:+--</center>
+    </p>
+    <p>Your team has just clinched the best record in the league and home court advantage throughout the playoffs. Only a short time away to the postseason, how does it help your chances of success in the playoffs?</p>
+    <p>
+      <center>P:+++ A:+++ L:=-+ I:==+</center>
+    </p>
+
+    <a id="capitulo_4">
+      <h2>4. How to Contribute/Correct</h2>
+    </a>
+    <p>If you want to contribute to or correct this FAQ, please contact me at imacdcptn@yahoo.com. You can send contributions or corrections in the form of questions and answer results in the above format.</p>
+    <p>To aid your efforts, I'll share a trick that will allow you to find the answers many questions quickly. First, unless you've already done so, turn Autosave off: in My Player mode, load the options menu, then go to "NBA> Options>Game Mode Options" and set "Autosave" to "Off" - save the game manually after disabling Autosave, or the change to the Autosave setting won't be saved! Play a game through as normal until late in the 4th quarter. Save the game and exit, "Pause Menu>Quit>Save and Exit Game." Make sure you choose a file to which to save your game after you exit, as NBA 2K11 will no longer autosave the game to the file you were previously using! Also, it's not a good idea to overwrite your main save file with an in-game save, since there are some bugs with in-game saving that can result in corrupt save files; the best-known of these will ruin your save if you save right before or during a time out, so don't do that. Now, load the in-game save. You'll find yourself back in game at the last break in play. Play through to the end and answer the press conference question as usual, noting the question and results from your answer choice. Then, repeat the last two steps - quit My Player, re-load the in-game save, and play to the end and answer a question again, noting the question and result. Questions are determined by significant game/season results, so repeatedly replaying the end of a given game will almost always result in the asking of the same question, or sometimes members of a small set of basically equivalent questions. So, using this trick, you can directly discover the results from all the answers to a question or group of similar questions.</p>
+
+    <a id="capitulo_5">
+      <h2>5. Acknowledgements</h2>
+    </a>
+    <p>Thanks to the following contributors:</p>
+    <span class="centralizado">
+      <p>kaptinplanit - 13 new answers, including 5 new questions!</p>
+      <p>Justin McNairy - 10 new answers, including 2 new questions!</p>
+      <p>funner2 - 4 new answers, including 3 new questions!</p>
+      <p>mubulldog14 - 10 new answers, including 1 new question!</p>
+      <p>BarbedSchwarz - 3 new answers, including 2 new questions!</p>
+      <p>rglass4 - 2 new answers, including 2 new questions!</p>
+      <p>Light Rocket - 5 new answers, including 1 new question!</p>
+      <p>parsifals - 5 new answers, including 1 new question!</p>
+      <p>wwefanatico - 3 new answers, including 1 new question!</p>
+      <p>airalcorn2 - 3 new answers, including 1 new question!</p>
+      <p>>nickmaster2007 - 1 new answer, including 1 new question!</p>
+      <p>KickstartsBar9 - 1 new answer, including 1 new question!</p>
+      <p>TooAmazing - 1 new answer, including 1 new question!</p>
+      <p>TheJockWhoGames - 5 new answers.</p>
+      <p>Iyke Iwuanyanwu - 3 new answers.</p>
+      <p>rveezy415 - 2 new answers.</p>
+      <p>BoneCrusher2020 - 2 new answers.</p>
+      <p>Gabriel - 2 new answers.</p>
+      <p>Ricky Olenick - 2 new answers.</p>
+      <p>Matt - 2 new answers.</p>
+      <p>SirLinkalot777 - 2 new answers.</p>
+      <p>himynameisping - 2 new answers.</p>
+      <p>Slickstream - 2 new answers.</p>
+      <p>xXxMrGadgetxXx - 2 new answers.</p>
+      <p>bgtj dhfht - 1 new answer.</p>
+      <p>wesley jordan - 1 new answer.</p>
+      <p>ii got soul - 1 new answer.</p>
+      <p>Marc Schöfer - 1 new answer.</p>
+      <p>John Smith - 1 new answer.</p>
+      <p>Lee Yuan - 1 new answer.</p>
+      <p>Victor Twu - 1 new answer.</p>
+      <p>Cody Davis - 1 new answer.</p>
+      <p>contrafactus - 1 new answer.</p>
+      <p>Stephen Yip - 1 new answer.</p>
+      <p>Dominikachu - 1 new answer.</p>
+      <p>Allen Fung - 1 new answer.</p>
+      <p>Troy Hoff - 1 new answer.</p>
+      <p>Flakturnal - 1 new answer.</p>
+      <p>Steven Chaco - 1 new answer.</p>
+      <p>Ricky Su - 1 new answer.</p>
+      <p>Benjamin Cross - 1 new answer.</p>
+      <p>Guyana_Bandit - 1 new answer.</p>
+      <p>Blazinstar88 - 1 new answer.</p>
+      <p>JoseJames23 - 1 new answer.</p>
+      <p>Al-Fatih Gaafar Eisa - 1 new answer.</p>
+      <p>Jay Dubya - 1 new answer.</p>
+    </span>
+    <p>Finally, I have to thank 2K for making this fine game, even if I do have to play an unpatched version if I don't want compulsory CPU playcalling!</p>
+    <a id="capitulo_6">
+      <h2>6. Version History</h2>
+    </a>
+    <p>0.01, Published 1/30/2011 - First version.</p>
+    <p>0.02, Published 2/19/2011 - Added many new entires. Changed margins. Alphabetized entries. Added this section. Minor changes to wording in many sections.</p>
+    <p>0.03, Published 3/11/2011 - Added new questions and answers, including from new contributors. Began changing end-line formatting. Clarified how to disable Autosave in answer-finding trick. Clarified "How To Read" section.</p>
+    <p>0.04, Published 3/20/2011 - Added more new questions and answers, including from new contributors. Completed fixes of end-line formatting. Added note on in-game-save timeout bug. Slight changes to other instructional sections.</p>
+    <p>0.1, Published 4/10/2011 - Added more new questions and answers, including from new contributors.</p>
+    <p>0.2, Published 5/24/2011 - Added more new questions and answers, including from new contributors.</p>
+    <p>0.3, Published 6/19/2011 - Added more new questions and answers, including from new contributors. Some minor edits to text sections.</p>
+    <p>0.4, Published 9/12/2011 - Added more new questions and answers, including from new contributors.</p>
+    <p>Last Updated 9/12/2011.</p>
+    <p>Source: <a href="https://gamefaqs.gamespot.com/xbox360/987827-nba-2k11/faqs/61857" class="sublinhar">Post Game Interview Guide (PC) by imacdcptn</a>; on <a href="https://gamefaqs.gamespot.com/" class="sublinhar">GameFAQs</a>.
+    </p>
   </div>
 
 </body>
-
-</html>
 <!-- partial -->
-  <script  src="script/script.js"></script>
+  <script  src="scripts/script.js"></script>
 
 </body>
 </html>
